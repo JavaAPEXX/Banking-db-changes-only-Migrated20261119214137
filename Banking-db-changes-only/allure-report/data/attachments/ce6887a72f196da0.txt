@@ -1,0 +1,6 @@
+Test Scenario: [TC_UI_018] Unauthenticated User Access Restriction on Officer Dashboard Guard Clause [P0]
+Status: BLOCKED
+Duration: 1500ms
+Target Application: https://banking-3version.onrender.com
+Diagnostics Log:
+Test execution blocked due to setup or dependency failure.

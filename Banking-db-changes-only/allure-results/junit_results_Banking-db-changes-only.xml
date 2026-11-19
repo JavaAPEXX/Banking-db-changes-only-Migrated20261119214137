@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="Playwright.Suite.Banking-db-changes-only" tests="9" failures="9" skipped="0" time="0.00">
+  <testcase name="Verify GET /admin/audit-logs retrieves authentication and system logs" classname="PROVA.E2E.Banking-db-changes-only" time="0.00">
+    <error message="Target Application Unavailable (HTTP 503 / Network Failure)" type="ApplicationUnavailableError">APPLICATION_UNAVAILABLE: Target Application route failed: https://banking-3version.onrender.com (http 503). Server cold-start or reverse proxy failure.</error>
+  </testcase>
+  <testcase name="Unauthenticated User Access Restriction on Officer Dashboard Guard Clause" classname="PROVA.E2E.Banking-db-changes-only" time="0.00">
+    <error message="Target Application Unavailable (HTTP 503 / Network Failure)" type="ApplicationUnavailableError">APPLICATION_UNAVAILABLE: Target Application route failed: https://banking-3version.onrender.com (http 503). Server cold-start or reverse proxy failure.</error>
+  </testcase>
+  <testcase name="Verify POST /admin/staff/reset-mfa resets MFA status for staff" classname="PROVA.E2E.Banking-db-changes-only" time="0.00">
+    <error message="Target Application Unavailable (HTTP 503 / Network Failure)" type="ApplicationUnavailableError">APPLICATION_UNAVAILABLE: Target Application route failed: https://banking-3version.onrender.com (http 503). Server cold-start or reverse proxy failure.</error>
+  </testcase>
+  <testcase name="Verify POST /register creates a new customer user account" classname="PROVA.E2E.Banking-db-changes-only" time="0.00">
+    <error message="Target Application Unavailable (HTTP 503 / Network Failure)" type="ApplicationUnavailableError">APPLICATION_UNAVAILABLE: Target Application route failed: https://banking-3version.onrender.com (http 503). Server cold-start or reverse proxy failure.</error>
+  </testcase>
+  <testcase name="Verify POST /mfa-verify succeeds with valid TOTP code" classname="PROVA.E2E.Banking-db-changes-only" time="0.00">
+    <error message="Target Application Unavailable (HTTP 503 / Network Failure)" type="ApplicationUnavailableError">APPLICATION_UNAVAILABLE: Target Application route failed: https://banking-3version.onrender.com (http 503). Server cold-start or reverse proxy failure.</error>
+  </testcase>
+  <testcase name="Verify POST /forgot-password sends password reset request" classname="PROVA.E2E.Banking-db-changes-only" time="0.00">
+    <error message="Target Application Unavailable (HTTP 503 / Network Failure)" type="ApplicationUnavailableError">APPLICATION_UNAVAILABLE: Target Application route failed: https://banking-3version.onrender.com (http 503). Server cold-start or reverse proxy failure.</error>
+  </testcase>
+  <testcase name="Session Timeout Warning and Extension Handling" classname="PROVA.E2E.Banking-db-changes-only" time="0.00">
+    <error message="Target Application Unavailable (HTTP 503 / Network Failure)" type="ApplicationUnavailableError">APPLICATION_UNAVAILABLE: Target Application route failed: https://banking-3version.onrender.com (http 503). Server cold-start or reverse proxy failure.</error>
+  </testcase>
+  <testcase name="Create Overdue Loan Record and Trigger Email Reminder" classname="PROVA.E2E.Banking-db-changes-only" time="0.00">
+    <error message="Target Application Unavailable (HTTP 503 / Network Failure)" type="ApplicationUnavailableError">APPLICATION_UNAVAILABLE: Target Application route failed: https://banking-3version.onrender.com (http 503). Server cold-start or reverse proxy failure.</error>
+  </testcase>
+  <testcase name="Customer Account Password Recovery Request" classname="PROVA.E2E.Banking-db-changes-only" time="0.00">
+    <error message="Target Application Unavailable (HTTP 503 / Network Failure)" type="ApplicationUnavailableError">APPLICATION_UNAVAILABLE: Target Application route failed: https://banking-3version.onrender.com (http 503). Server cold-start or reverse proxy failure.</error>
+  </testcase>
+</testsuite>

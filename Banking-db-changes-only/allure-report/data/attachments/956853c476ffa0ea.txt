@@ -1,0 +1,6 @@
+Test Scenario: Authenticate & Save Storage State
+Status: AUTHENTICATION_FAILED
+Duration: 78120ms
+Target Application: https://banking-3version.onrender.com
+Diagnostics Log:
+Test timeout of 60000ms exceeded.

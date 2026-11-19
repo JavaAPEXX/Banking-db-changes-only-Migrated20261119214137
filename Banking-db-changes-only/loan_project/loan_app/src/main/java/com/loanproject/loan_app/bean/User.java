@@ -1,0 +1,260 @@
+package com.loanproject.loan_app.bean;
+
+import java.time.LocalDateTime;
+
+@org.springframework.data.mongodb.core.mapping.Document(collection = "users")
+
+public class User {
+
+    @org.springframework.data.annotation.Id
+
+    private Long id;
+
+    private String name;
+
+    @org.springframework.data.mongodb.core.index.Indexed(unique = true)
+    private String email;
+
+    private String password;
+
+    private AppRole role = AppRole.ROLE_CUSTOMER;
+
+    private UserType userType = UserType.CUSTOMER;
+
+    private int failedAttemptCount = 0;
+
+    private boolean accountNonLocked = true;
+
+    private LocalDateTime lockTime;
+
+    private boolean mfaEnrolled = false;
+
+    private String mfaSecret;
+
+    private String mfaType = "TOTP";
+
+    private String phoneNumber;
+
+    private String branch = "MAIN";
+
+    private String customerId;
+
+    private String panNumber;
+
+    private String aadhaarNumber;
+
+    private java.time.LocalDate dateOfBirth;
+
+    private String kycStatus = "VERIFIED";
+
+    private String address;
+
+    private String preferredContactMethod = "EMAIL";
+
+    private boolean contactDetailUpdateRequired = false;
+
+    public User() {
+    }
+
+    public User(String name, String email, String password, AppRole role, UserType userType) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.role = role != null ? role : AppRole.ROLE_CUSTOMER;
+        this.userType = userType != null ? userType : UserType.CUSTOMER;
+        this.accountNonLocked = true;
+        this.failedAttemptCount = 0;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public AppRole getRole() {
+        return role != null ? role : AppRole.ROLE_CUSTOMER;
+    }
+
+    public void setRole(AppRole role) {
+        this.role = role;
+    }
+
+    public UserType getUserType() {
+        return userType != null ? userType : UserType.CUSTOMER;
+    }
+
+    public void setUserType(UserType userType) {
+        this.userType = userType;
+    }
+
+    public int getFailedAttemptCount() {
+        return failedAttemptCount;
+    }
+
+    public void setFailedAttemptCount(int failedAttemptCount) {
+        this.failedAttemptCount = failedAttemptCount;
+    }
+
+    public boolean isAccountNonLocked() {
+        return accountNonLocked;
+    }
+
+    public void setAccountNonLocked(boolean accountNonLocked) {
+        this.accountNonLocked = accountNonLocked;
+    }
+
+    public LocalDateTime getLockTime() {
+        return lockTime;
+    }
+
+    public void setLockTime(LocalDateTime lockTime) {
+        this.lockTime = lockTime;
+    }
+
+    public boolean isMfaEnrolled() {
+        return mfaEnrolled;
+    }
+
+    public void setMfaEnrolled(boolean mfaEnrolled) {
+        this.mfaEnrolled = mfaEnrolled;
+    }
+
+    public String getMfaSecret() {
+        return mfaSecret;
+    }
+
+    public void setMfaSecret(String mfaSecret) {
+        this.mfaSecret = mfaSecret;
+    }
+
+    public String getMfaType() {
+        return mfaType;
+    }
+
+    public void setMfaType(String mfaType) {
+        this.mfaType = mfaType;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    @org.springframework.data.annotation.Transient
+    public boolean isStaff() {
+        if (this.role == AppRole.ROLE_ADMIN ||
+            this.role == AppRole.ROLE_LOAN_OFFICER ||
+            this.role == AppRole.ROLE_COLLECTIONS_AGENT ||
+            this.role == AppRole.ROLE_COLLECTIONS_MANAGER) {
+            return true;
+        }
+        return this.userType == UserType.STAFF;
+    }
+
+    @org.springframework.data.annotation.Transient
+    public boolean isCustomer() {
+        return !isStaff() && (this.role == AppRole.ROLE_CUSTOMER || this.userType == UserType.CUSTOMER);
+    }
+
+    public String getBranch() {
+        return branch != null ? branch : "MAIN";
+    }
+
+    public void setBranch(String branch) {
+        this.branch = branch;
+    }
+
+    public String getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
+    }
+
+    public String getPanNumber() {
+        return panNumber;
+    }
+
+    public void setPanNumber(String panNumber) {
+        this.panNumber = panNumber;
+    }
+
+    public String getAadhaarNumber() {
+        return aadhaarNumber;
+    }
+
+    public void setAadhaarNumber(String aadhaarNumber) {
+        this.aadhaarNumber = aadhaarNumber;
+    }
+
+    public java.time.LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(java.time.LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public String getKycStatus() {
+        return kycStatus != null ? kycStatus : "VERIFIED";
+    }
+
+    public void setKycStatus(String kycStatus) {
+        this.kycStatus = kycStatus;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getPreferredContactMethod() {
+        return preferredContactMethod != null ? preferredContactMethod : "EMAIL";
+    }
+
+    public void setPreferredContactMethod(String preferredContactMethod) {
+        this.preferredContactMethod = preferredContactMethod;
+    }
+
+    public boolean isContactDetailUpdateRequired() {
+        return contactDetailUpdateRequired;
+    }
+
+    public void setContactDetailUpdateRequired(boolean contactDetailUpdateRequired) {
+        this.contactDetailUpdateRequired = contactDetailUpdateRequired;
+    }
+}

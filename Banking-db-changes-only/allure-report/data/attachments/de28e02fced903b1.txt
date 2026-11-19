@@ -1,0 +1,6 @@
+Test Scenario: [TC_API_008] GET Verify GET /admin/audit-logs retrieves authentication and system logs [P0]
+Status: BLOCKED
+Duration: 1500ms
+Target Application: https://banking-3version.onrender.com
+Diagnostics Log:
+Test execution blocked due to setup or dependency failure.

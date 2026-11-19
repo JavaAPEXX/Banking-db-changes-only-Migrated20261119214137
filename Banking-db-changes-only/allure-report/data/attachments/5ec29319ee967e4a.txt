@@ -1,0 +1,6 @@
+Test Scenario: [TC_API_007] POST Verify POST /admin/staff/reset-mfa resets MFA status for staff [P1]
+Status: BLOCKED
+Duration: 1500ms
+Target Application: https://banking-3version.onrender.com
+Diagnostics Log:
+Test execution blocked due to setup or dependency failure.

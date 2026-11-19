@@ -1,0 +1,101 @@
+{
+  "uuid": "572f6dd0-c81f-4351-a67d-8148f9d81462",
+  "historyId": "Banking-db-changes-only_0_5250520224303922771",
+  "status": "broken",
+  "statusDetails": {
+    "message": "Application Unavailable: APPLICATION_UNAVAILABLE: Target Application route failed: https://banking-3version.onrender.com (http 503). Server cold-start or reverse proxy failure.",
+    "trace": "APPLICATION_UNAVAILABLE: Target Application route failed: https://banking-3version.onrender.com (http 503). Server cold-start or reverse proxy failure."
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Check Target Host: https://banking-3version.onrender.com (Unavailable (HTTP 503))",
+      "status": "passed",
+      "stage": "finished",
+      "start": 1794329997387,
+      "stop": 1794329997837
+    },
+    {
+      "name": "Execute Functional Scenario: Verify GET /admin/audit-logs retrieves authentication and system logs",
+      "status": "broken",
+      "stage": "finished",
+      "start": 1794329998137,
+      "stop": 1794329998887,
+      "statusDetails": {
+        "message": "Application Unavailable: APPLICATION_UNAVAILABLE: Target Application route failed: https://banking-3version.onrender.com (http 503). Server cold-start or reverse proxy failure.",
+        "trace": "APPLICATION_UNAVAILABLE: Target Application route failed: https://banking-3version.onrender.com (http 503). Server cold-start or reverse proxy failure."
+      }
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Execution Diagnostics",
+      "source": "572f6dd0-c81f-4351-a67d-8148f9d81462_diagnostics.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "Target Host",
+      "value": "https://banking-3version.onrender.com"
+    },
+    {
+      "name": "Target Availability",
+      "value": "Unavailable (HTTP 503)"
+    },
+    {
+      "name": "Health Status",
+      "value": "HTTP 503 Service Unavailable"
+    },
+    {
+      "name": "Health Latency",
+      "value": "8094ms"
+    },
+    {
+      "name": "Authentication Mode",
+      "value": "No Authentication (Public Application)"
+    },
+    {
+      "name": "Execution Duration (ms)",
+      "value": "1500"
+    }
+  ],
+  "start": 1794329997387,
+  "stop": 1794329998887,
+  "name": "Verify GET /admin/audit-logs retrieves authentication and system logs",
+  "fullName": "PROVA.E2E.Banking-db-changes-only#Verify GET /admin/audit-logs retrieves authentication and system logs",
+  "labels": [
+    {
+      "name": "package",
+      "value": "PROVA.E2E.Banking-db-changes-only"
+    },
+    {
+      "name": "testClass",
+      "value": "Banking-db-changes-only"
+    },
+    {
+      "name": "testMethod",
+      "value": "Verify GET /admin/audit-logs retrieves authentication and system logs"
+    },
+    {
+      "name": "suite",
+      "value": "PROVA Strategy Execution Suite"
+    },
+    {
+      "name": "subSuite",
+      "value": "Banking-db-changes-only"
+    },
+    {
+      "name": "framework",
+      "value": "Playwright TypeScript"
+    },
+    {
+      "name": "language",
+      "value": "typescript"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ]
+}

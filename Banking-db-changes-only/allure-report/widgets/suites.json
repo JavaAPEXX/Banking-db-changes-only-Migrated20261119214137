@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"aae73d1bd1fbeb0ebefb50b94014a426","name":"Playwright.Suite.Banking-db-changes-only","statistic":{"failed":0,"broken":1,"skipped":9,"passed":0,"unknown":0,"total":10}},{"uid":"b448286c8bb7598f70ffd31b23e7c4fb","name":"PROVA Strategy Execution Suite","statistic":{"failed":0,"broken":1,"skipped":9,"passed":0,"unknown":0,"total":10}}]}

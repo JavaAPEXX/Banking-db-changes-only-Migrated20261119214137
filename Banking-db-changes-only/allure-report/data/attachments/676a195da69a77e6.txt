@@ -1,0 +1,6 @@
+Test Scenario: [TC_API_020] POST Verify POST /forgot-password sends password reset request [P0]
+Status: BLOCKED
+Duration: 1500ms
+Target Application: https://banking-3version.onrender.com
+Diagnostics Log:
+Test execution blocked due to setup or dependency failure.

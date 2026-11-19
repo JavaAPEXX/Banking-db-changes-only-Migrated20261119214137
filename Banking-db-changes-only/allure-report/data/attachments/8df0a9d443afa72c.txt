@@ -1,0 +1,6 @@
+Test Scenario: [TC_API_018] POST Verify POST /mfa-verify succeeds with valid TOTP code [P2]
+Status: BLOCKED
+Duration: 1500ms
+Target Application: https://banking-3version.onrender.com
+Diagnostics Log:
+Test execution blocked due to setup or dependency failure.

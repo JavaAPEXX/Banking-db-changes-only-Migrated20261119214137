@@ -1,0 +1,6 @@
+Test Scenario: Unauthenticated User Access Restriction on Officer Dashboard Guard Clause
+Status: APPLICATION_UNAVAILABLE
+Duration: 1500ms
+Target Application: https://banking-3version.onrender.com
+Diagnostics Log:
+APPLICATION_UNAVAILABLE: Target Application route failed: https://banking-3version.onrender.com (http 503). Server cold-start or reverse proxy failure.

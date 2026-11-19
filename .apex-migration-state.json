@@ -1,0 +1,7 @@
+{
+  "job_id": "job_5eeb5bf9d30a",
+  "sourceRepoUrl": "local://Banking-db-changes-only",
+  "targetJavaVersion": "21.0.12.1",
+  "status": "MIGRATION_CHECKPOINT",
+  "migration_date": ""
+}
